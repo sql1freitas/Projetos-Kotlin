@@ -8,12 +8,48 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/resultadoConversao"
+        android:layout_width="149dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="253dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:lineSpacingExtra="20sp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoConverterTemperatura" />
+
+    <EditText
+        android:id="@+id/adicionarTemperatura"
+        android:layout_width="203dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Digite a temperatura"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoConverterTemperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoConverterTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="Converter para Fº"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoConversao"
+        app:layout_constraintEnd_toEndOf="@+id/adicionarTemperatura"
+        app:layout_constraintTop_toBottomOf="@+id/adicionarTemperatura" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
             var resultadoConversao = ((temperatura*1.8) + 32).toString().trim()
 
-            
+
             binding.resultadoConversao.setText(resultadoConversao + "Fº")
 
         }

@@ -20,10 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.botaoConverterTemperatura.setOnClickListener {
 
-            var temperatura = binding.adicionarTemperatura.text.toString().toDouble()
+            var temperatura = binding.adicionarTemperatura.text.toString().trim().toDouble()
 
-            var resultadoConversao = ((temperatura*1.8) + 32).toString()
+            var resultadoConversao = ((temperatura*1.8) + 32).toString().trim()
 
+            
             binding.resultadoConversao.setText(resultadoConversao + "Fº")
 
         }

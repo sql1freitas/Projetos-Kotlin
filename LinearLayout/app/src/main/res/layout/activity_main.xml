@@ -11,16 +11,69 @@
 
     
     <TextView
+        android:id="@+id/bannerTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculadora do Matheus"
+        android:padding="15dp"
+        android:text="Sorteador de Nomes"
         android:gravity="center"
         android:fontFamily="@font/bebas_neue"
         android:textSize="40sp"
         android:background="#6633CC"
         android:textColor="#ffff"
-        android:padding="30sp"
-        android:id="@+id/bannerTitulo"/>
+        />
+
+    <EditText
+        android:id="@+id/inserirNomes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira aqui os nomes"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
+
+    <Button
+        android:id="@+id/botaoAdicionar"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#6633CC"
+        android:text="Adicionar"
+        android:autoSizeTextType="uniform"
+         />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaDeNomes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="#6633CC"/>
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </LinearLayout>

@@ -26,54 +26,53 @@
     <EditText
         android:id="@+id/inserirNomes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="Insira aqui os nomes"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="75dp"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="50dp"
-         />
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:hint="Insira aqui os nomes" />
 
     <Button
         android:id="@+id/botaoAdicionar"
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:backgroundTint="#6633CC"
         android:text="Adicionar"
         android:autoSizeTextType="uniform"
          />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listaDeNomes"
-        android:layout_width="match_parent"
-        android:layout_height="0dp" >
-
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="16dp"
-        android:textSize="18sp"
-        android:textColor="#6633CC"/>
-
-
-    </androidx.recyclerview.widget.RecyclerView>
+    <ScrollView
+        android:id="@+id/nomesAdicionados"
+        android:layout_width="360dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
 
 
 
+        <TextView
+            android:id="@+id/listaNomes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:padding="5dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeStepGranularity="2sp"
+            android:textColor="#6633CC"
+            android:text="Matheus, Marcos, Paulo, Lucas, Ana, Gustavo, Roberto, Robson, Lucas, Renata"
+            android:textAlignment="center">
 
 
+        </TextView>
 
 
-
-
-
-
-
+    </ScrollView>
 
 
 </LinearLayout>

@@ -1,78 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    
-    <TextView
-        android:id="@+id/bannerTitulo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Sorteador de Nomes"
-        android:gravity="center"
-        android:fontFamily="@font/bebas_neue"
-        android:textSize="40sp"
-        android:background="#6633CC"
-        android:textColor="#ffff"
-        />
-
-    <EditText
-        android:id="@+id/inserirNomes"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:hint="Insira aqui os nomes" />
-
-    <Button
-        android:id="@+id/botaoAdicionar"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#6633CC"
-        android:text="Adicionar"
-        android:autoSizeTextType="uniform"
-         />
-
-    <ScrollView
-        android:id="@+id/nomesAdicionados"
-        android:layout_width="360dp"
-        android:layout_height="110dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp">
-
-
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/listaNomes"
+            android:id="@+id/bannerTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Sorteador de Nomes"
+            android:gravity="center"
             android:fontFamily="@font/bebas_neue"
-            android:padding="5dp"
-            android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="18sp"
-            android:autoSizeMaxTextSize="100sp"
-            android:autoSizeStepGranularity="2sp"
-            android:textColor="#6633CC"
-            android:text="Matheus, Marcos, Paulo, Lucas, Ana, Gustavo, Roberto, Robson, Lucas, Renata"
-            android:textAlignment="center">
+            android:textSize="40sp"
+            android:background="#6633CC"
+            android:textColor="#ffff" />
 
+        <EditText
+            android:id="@+id/inserirNomes"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:hint="Insira aqui os nomes" />
 
-        </TextView>
+        <Button
+            android:id="@+id/botaoAdicionar"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#6633CC"
+            android:text="Adicionar"
+            android:autoSizeTextType="uniform" />
 
+        <!-- Defina a altura máxima do RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp" />
 
-    </ScrollView>
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

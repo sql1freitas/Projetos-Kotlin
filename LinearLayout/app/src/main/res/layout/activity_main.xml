@@ -44,12 +44,33 @@
             android:text="Adicionar"
             android:autoSizeTextType="uniform" />
 
-        <!-- Defina a altura máxima do RecyclerView -->
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/botaoSortear"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#6633CC"
+            android:text="Sortear!"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/nomeSorteado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="60sp"
+            android:textColor="#6633CC"
+            android:textAlignment="center" />
+
 
     </LinearLayout>
 </ScrollView>

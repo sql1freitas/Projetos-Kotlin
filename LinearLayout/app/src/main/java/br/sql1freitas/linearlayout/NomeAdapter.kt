@@ -29,4 +29,9 @@ class NomeAdapter(private val nomes: MutableList<Nome>) : RecyclerView.Adapter<N
         nomes.add(nome)
         notifyItemInserted(nomes.size - 1)
     }
+
+    fun getNome(position: Int): Nome {
+        return nomes[position]
+    }
+
 }

@@ -7,8 +7,9 @@
 
     <TextView
         android:id="@+id/textViewNome"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:fontFamily="@font/bebas_neue"
         android:textSize="28sp"
         android:textColor="#6633CC"
@@ -17,8 +18,15 @@
 
     <Button
         android:id="@+id/buttonRemove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remover" />
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="#ad0c0c"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:autoSizeTextType="uniform"/>
 
 </LinearLayout>

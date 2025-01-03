@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "br.sql1freitas.exerciciologin"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "br.sql1freitas.exerciciologin"

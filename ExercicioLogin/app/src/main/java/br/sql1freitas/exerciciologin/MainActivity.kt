@@ -1,5 +1,6 @@
 package br.sql1freitas.exerciciologin
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         if (username == "matheus" && password == "1234") {
             Toast.makeText(applicationContext, "Acesso Permitido!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, AcessoActivity::class.java))
         } else {
             Toast.makeText(applicationContext, "Dados Incorretos!", Toast.LENGTH_SHORT).show()
         }

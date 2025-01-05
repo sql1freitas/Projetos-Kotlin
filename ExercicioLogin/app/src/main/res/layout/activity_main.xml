@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Preencha seu username e password para continuar"
         android:gravity="center"
-        android:textColor="#ff0090"
+        android:textColor="@color/black"
         android:fontFamily="@font/concert_one"
         android:textSize="15sp"
         android:layout_marginBottom="30dp"/>
@@ -91,6 +91,31 @@
         android:layout_marginTop="30dp"
         android:text="Login"
         android:backgroundTint="#ff0047"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Não possui uma conta? Cadastre-se!"
+            android:fontFamily="@font/kavoon"
+            android:textColor="#ff0047"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Cadastrar"
+            android:textSize="11sp"
+            android:backgroundTint="@color/black" />
+
+
+
        
 
         

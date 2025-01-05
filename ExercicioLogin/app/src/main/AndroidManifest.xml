@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ExercicioLogin"
         tools:targetApi="31">
         <activity
+            android:name=".cadastrarActivity"
+            android:exported="false" />
+        <activity
             android:name=".AcessoActivity"
             android:exported="false" />
         <activity

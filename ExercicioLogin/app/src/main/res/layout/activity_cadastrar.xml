@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".cadastrarActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Cadastro"
+        android:fontFamily="@font/concert_one"
+        android:layout_marginBottom="15dp" />
+
+
+    <EditText
+        android:id="@+id/setLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Digite seu login:" />
+
+    <EditText
+        android:id="@+id/setPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Digite sua senha:"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Cadastrar"
+        android:backgroundTint="@color/black" />
+
+
+
+
+
+</LinearLayout>

@@ -17,7 +17,7 @@
         android:gravity="center"
         android:fontFamily="sans-serif-medium"
         android:textSize="20sp"
-        android:background="@color/black"
+        android:background="#ff7134"
         android:textColor="#ffffff" />
 
     <TextView
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#ff7134"
         android:text="Enviar dados" />
 
 

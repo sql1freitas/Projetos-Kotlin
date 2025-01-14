@@ -9,4 +9,17 @@
     tools:context=".MainActivity">
 
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz do Teteu"
+        android:gravity="center"
+        android:fontFamily="@font/bungee_inline"
+        android:textColor="#ffffff"
+        android:background="#3300ff"
+        android:textSize="24sp"/>
+
+
+
 </LinearLayout>

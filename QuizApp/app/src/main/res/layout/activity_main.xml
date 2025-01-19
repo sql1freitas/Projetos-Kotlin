@@ -16,6 +16,7 @@
         android:text="Quiz do Teteu"
         android:fontFamily="@font/bungee_inline"
         android:textColor="#ffffff"
+        android:gravity="center"
         android:background="#3300ff"
         android:textSize="24sp"/>
 
